@@ -75,6 +75,8 @@ d3.csv("../Data/teams_entropy.csv", function(error, data) {
       .attr("cx", function(d) { return x(d.X); })
       .attr("cy", function(d) { return y(d.Entropy); })
       .style("fill", function(d) { return color(d.Colour); })
+      .attr("outline", "None")
+      .attr("opacity", .5)
       .on("mouseover", function(d) {
           tooltip.transition()
                .duration(200)
@@ -90,3 +92,4 @@ d3.csv("../Data/teams_entropy.csv", function(error, data) {
                .style("opacity", 0);
       });
 });
+// move outline and opacity to css
