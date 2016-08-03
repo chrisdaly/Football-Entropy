@@ -4,12 +4,21 @@ body {
 
 .axis path,
 .axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
+	fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
 }
 
 .dot {
-  stroke: #000;
   outline: none;
+  opacity: .6;
+}
+
+.tooltip {
+  position: absolute;
+  width: 90;
+  height: 45px;
+  pointer-events: none;
+  border-radius:  5px;
+  padding: 5px;
 }
