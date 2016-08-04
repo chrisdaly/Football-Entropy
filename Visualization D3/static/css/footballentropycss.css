@@ -1,20 +1,13 @@
-body {
-  font: 11px calibri;
-}
-
-/*.axis path,
-.axis line {
-	fill: darkgrey  ;
-  stroke-width: .1px;
-	shape-rendering: crispEdges;
-}*/
-
 .axis path,
 .axis line {
 	fill: none;
-  stroke: #666;
-  stroke-width: 1.5px;
+  stroke: gray;
+  stroke-width: 1px;
 	shape-rendering: crispEdges;
+}
+.axistitle{
+  font: 20px calibri;
+  color: red; !important;
 }
 
 path.line {
@@ -31,9 +24,29 @@ path.line {
   pointer-events: none;
   border-radius:  5px;
   padding: 5px;
-  display: inline-block
+  display: inline-block;
+  opacity: 1;
+  font: 15px calibri;
+  color: black;
+
 }
 
 .label {
+  font: 12px calibri;
+  color: red;
+}
+
+.legendtext {
   font: 15px calibri;
+  color: red;
+}
+
+#content {
+    width: 1000px;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
 }
