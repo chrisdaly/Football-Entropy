@@ -55,7 +55,7 @@ var tooltip = d3.select("body").append("div")
 //     .attr("height", 200)
 //     .attr("width", 200)
 
-d3.csv("../Data/teams_entropy.csv", function(error, data) {
+d3.csv("/static/data/teams_entropy.csv", function(error, data) {
   if (error) throw error;
 
   data.forEach(function(d) {
@@ -121,7 +121,7 @@ d3.csv("../Data/teams_entropy.csv", function(error, data) {
         .data(Object.keys(colors))
       .enter().append("g")
         .attr("class", "legend")
-        .attr("transform", function(d, i) { return "translate(40," + 20+(i * 20) + ")"; });
+        .attr("transform", function(d, i) { return "translate(10," + (height-102+(i * 20)) + ")"; });
 
     // draw legend text
     legend.append("text")
